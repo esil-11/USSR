@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 60vw;
+    margin-left: 2vw;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2vw;
+    margin: 1vw 1.5vw;
+    margin-bottom: 3vw;
+    border-radius: 5px;
+    width: calc(100% - 3vw);
+}
+
+.text-container p {
+    margin: 0;
+}
+
+.text-image {
+    width: 100%;
+    max-width: 30vw;
+    margin-bottom: 3vw;
+}
+
+.container {
+    display: flex;
+    padding: 2vw;
+    gap: 2vw;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2vw;
+    max-width: 100%;
+}
+
+.title-image {
+    width: 100%;
+    height: auto;
+    max-width: 30vw;
+    margin-bottom: 2vw;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 30vw;
+    margin-bottom: 2vw;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.5em;
+    color: darkred;
+    margin: 1vw 1.5vw;
+}
+
+.cursive {
+    font-family: 'Cursive', serif;
+}
+
+body.main-page {
+    background: url('images/main_background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.decade-page {
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .text-container {
+        padding: 1.5vw;
+        margin: 1vw 1.5vw;
+        margin-bottom: 2.5vw;
+        width: calc(100% - 3vw);
+    }
+
+    .text-image {
+        max-width: 25vw;
+        margin-bottom: 2.5vw; 
+    }
+
+    .title-image {
+        max-width: 25vw;
+    }
+
+    .carousel {
+        max-width: 25vw;
+    }
+
+    .main-container {
+        max-width: 50vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-container {
+        padding: 1vw;
+        margin: 0.5vw 1vw;
+        margin-bottom: 2vw;
+        width: calc(100% - 2vw);
+    }
+
+    .text-image {
+        max-width: 20vw;
+        margin-bottom: 2vw;
+    }
+
+    .title-image {
+        max-width: 20vw;
+    }
+
+    .carousel {
+        max-width: 20vw;
+    }
+
+    .main-container {
+        max-width: 40vw;
+    }
+}
